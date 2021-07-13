@@ -30,7 +30,7 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(event){
     event.preventDefault(); // Prevent refreshing
-    loginForm.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.add(HIDDEN_CLASSNAME); // hide login form
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username); //Memorizing
     paintGreetings(username); // call another function
@@ -38,13 +38,13 @@ function onLoginSubmit(event){
 
 function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
+    greeting.classList.remove(HIDDEN_CLASSNAME); // show greeting
   }
   
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME); // show login form
     loginForm.addEventListener("submit", onLoginSubmit);
   } else {
     paintGreetings(savedUsername);
