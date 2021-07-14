@@ -7,7 +7,8 @@ const TODOS_KEY = "todos";
 let toDos = [];
 
 function saveToDos() {
-  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+  // JSON.stringify(nn) <- let nn be string
+  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos)); //put toDos array in the local storage
 }
 
 function deleteToDo(event) {
@@ -49,6 +50,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
-  toDos = parsedToDos;
+  toDos = parsedToDos; //restore todo list
   parsedToDos.forEach(paintToDo);
 }
