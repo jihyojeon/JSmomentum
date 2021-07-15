@@ -1,4 +1,6 @@
 # JSmomentum
+Personal ToDo list with quotes and beautiful background
+
 ## Try it here!
 https://jihyomomentum.netlify.app/
 
