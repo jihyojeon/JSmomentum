@@ -1,3 +1,128 @@
 .hidden{
     display: none;
 }
+
+body{
+    padding-top:300px;
+    font-family: 'Helvetica Neue';
+}
+
+#background {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+  }
+
+img{
+    filter: brightness(30%);
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    z-index:-5;
+}
+
+.container {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#clock{
+    text-align: center;
+    font-size: 150px;
+    color:white;
+}
+
+#greeting{
+    margin-top:-100px;
+    text-align: center;
+    color: white;
+}
+
+#todo-form{
+    text-align: center;
+    margin-top:0px;
+}
+
+#todo-form input{
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    width: 400px;
+    height:40px;
+    background-color: transparent;
+    font-weight: 500;
+    margin-bottom:10px;
+    margin-top:-50px;
+    transition: all, 0.4s;
+}
+
+#todo-list{
+    /* text-align: center; */
+    margin-bottom:20px;
+}
+    #todo-list li{
+        color: white;
+        font-size:1rem;
+    }
+
+    #todo-list button{
+        margin-right:10px;
+        background-color: transparent;
+        border: none;
+    }
+
+ul{
+    list-style-type:none;
+}
+
+
+#login-form input{
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    width: 400px;
+    height:40px;
+    background-color: transparent;
+    font-weight: 500;
+    margin-bottom:20px;
+    margin-top:-50px;
+    transition: all, 0.4s;
+}
+
+#quote{
+    text-align: center;
+    bottom:20px;
+    font-size:0.8rem;
+    font-weight: 200;
+    color: white;
+}
+
+#weather{
+    position:absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-size:0.8rem;
+}
