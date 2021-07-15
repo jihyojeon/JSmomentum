@@ -5,5 +5,5 @@ Personal ToDo list with quotes and beautiful background
 https://jihyomomentum.netlify.app/
 
 ## Reference
-[Lecture](https://nomadcoders.co/javascript-for-beginners/lobby)
-[Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca)
+<li> [Lecture](https://nomadcoders.co/javascript-for-beginners/lobby)
+<li> [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca)
